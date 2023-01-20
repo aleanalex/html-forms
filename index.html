@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Forms</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <h1 style="text-align: center;">Html ALL FORM TAG </h1>
+
+    <h2>Simple Text File Form</h2>
+
+    <form action="">
+
+        <label for="fname">First Name:</label> <br>
+        <input type="text" id="fname" name="fname" value="Jhon"><br>
+
+        <br>
+
+        <label for="lname">Last Name:</label> <br>
+        <input type="text" name="lname" id="lname" value="Doe"> <br>
+
+        <br>
+        <br><br><br>
+        <h2>Dropdown Selection</h2>
+        <br>
+        <label for="products">Select One</label>
+
+        <select name="products" id="products">
+            <option value="pen">Pen</option>
+            <option value="pen">Pen</option>
+            <option value="pen">Pen</option>
+            <option value="pen">Pen</option>
+            <option value="pen">Pen</option>
+        </select>
+
+        <br>
+        <br>
+
+
+        <input type="submit" value="Submit">
+    </form>
+
+
+    <!-- Product Dropdown Selection -->
+
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1>Search Bar Data analisis.</h1>
+
+    <form action="admin.php">
+        <input list="browsers" name="browser">
+        <datalist id="browsers">
+            <option value="Internet">
+                <option value="Internet Exlorer"></option>
+                <option value="Fire Fox"></option>
+                <option value="Crome"></option>
+                <option value="Safari"></option>
+        </datalist>
+
+
+        <input type="submit">
+    </form>
+
+
+
+
+    <br><br>
+    <br><br>
+    <h1>Username And Password</h1>
+
+
+    <!-- Input Type  -->
+
+    <form action="admin.php">
+        <label for="username">Username:</label> <br>
+        <input type="text" id="username" name="username"> <br>
+
+        <label for="pwd">Password:</label><br>
+        <input type="password" id="pwd" name="pwd">
+
+        <br>
+        <br>
+
+        <input type="submit" value="Submit">
+
+        <br><br><br>
+        <h2>Reset Button</h2>
+        <input type="reset">
+
+
+        <br><br><br>
+        <h1>Submit Data With Alert</h1>
+        <input type="button" onclick="alert('Submit Successful.')" value="Submit">
+    </form>
+
+
+
+    <br>
+    <br><br><br>
+
+    <h1>Send Email:</h1>
+
+    <form action="admin.php">
+        <label for="email">Enter Your Email:</label> <br>
+        <input type="email" id="email" name="email">
+
+        <input type="submit" value="Submit">
+    </form>
+
+
+    <br>
+    <br><br><br>
+
+    <h1>Slect Image Files</h1>
+
+    <form action="">
+        <label for="myFile">Select A File</label><br>
+        <input type="file" name="myFile" id="myFile"><br><br>
+
+
+
+        <input type="submit" value="Submit">
+    </form>
+
+
+
+    <form action="admin.php">
+
+        <br> <h1>Button</h1>
+
+        <input type="button" value="Button ">
+        <br>
+
+        <br> <h1>Checkbox</h1>
+
+        <input type="checkbox"><br>
+        <input type="checkbox"><br>
+
+        <input type="checkbox"><br>
+
+
+        <br> <h1>Color</h1>
+        <input type="color"><br>
+
+
+
+        <br> <h1>Select Date</h1>
+        <input type="date"><br>
+
+
+        <br> <h1>Select Date and Time</h1>
+        <input type="datetime-local"><br>
+
+        <br> <h1>Email</h1>
+        <input type="email"><br>
+
+
+
+        <br> <h1>Choose File </h1>
+        <input type="file"><br>
+
+
+        <br> <h1>Hidden Input </h1>
+        <input type="hidden"><br>
+
+
+
+        <br> <h1> Image </h1>
+        <input type="image" src="https://mobimg.b-cdn.net/v3/fetch/05/05eeb93a2e41734ecb6044146351f11e.jpeg" width="230px"><br>
+
+
+
+        <br> <h1>Month</h1>
+        <input type="month"><br>
+
+
+
+        <br> <h1>Password</h1>
+        <input type="password"><br>
+
+
+
+        <br> <h1>Radio Selection Button </h1>
+        <input type="radio"><input type="radio"><input type="radio"><br>
+
+
+        <br> <h1>Reset Button</h1>
+        <input type="reset"><br>
+
+
+        <br> <h1>Search Bar </h1>
+        <input type="search"><br>
+
+
+
+        <br> <h1>Telephone </h1>
+        <input type="tel"><br>
+
+
+        <br> <h1>Text Type</h1>
+        <input type="text"><br>
+
+
+
+        <br> <h1>Time</h1>
+        <input type="time"><br>
+
+
+        <br> <h1>Web Url</h1>
+        <input type="url"><br>
+
+
+        <br> <h1>Week </h1>
+        <input type="week"><br>
+
+
+
+    </form>
+
+
+
+
+
+
+
+    <form action="Admin.php">
+        <h1>Min and Max Select</h1>
+
+        <label for="quantity">Quantity:</label> <br>
+        <input type="number" id="quantity" name="quantity" min="500" max="5000000" step="10" value="500">
+
+
+        <br>
+        <br>
+        <h1> Volume Customise</h1>
+
+        <label for="vol">Mange Volume</label>
+        <input type="range" id="vol" name="vol" min="0" max="50">
+
+
+
+        <br>
+        <br>
+        <h1>Enter a Phone number</h1>
+        <input type="tel" name="phone" id="phone" placeholder="019 ----------" pattern="[0-9]{3}-{0-9}{2}-[0-9]{3}" required>
+
+
+
+        <h1>Disable Input </h1>
+        <input type="text" id="fname" name="fname" value="John" disabled><br>
+
+
+
+
+
+        <br><br><br>
+        <h1>Input Size Manage</h1>
+        <label for="fname">First name:</label>
+        <input type="text" name="fname" id="fname" size="50">
+        <br>
+        <br>
+        <label for="pin">PIN:</label>
+        <input type="text" name="pin" id="pin" size="4"> 
+
+        <br>
+        <br><br>
+
+        <h1>PIN NUmber Limit Fix </h1>
+        <h3>Here this Digit Limit 4.</h3>
+        <input type="text" id="pin" name="pin" maxlength="4" size="4"><br><br>
+
+
+        <h1>Email Autocomplete On OFF</h1>
+        <h3>OFF</h3>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" autocomplete="off"><br><br>
+        <h3>On</h3>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" autocomplete="on"><br><br>
+
+
+        
+    </form>
+
+
+
+
+    
+    
+</body>
+</html>
